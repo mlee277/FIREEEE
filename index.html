@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+
+
     <meta charset="utf-8" />
 
     <!-- jQuery -->
@@ -10,14 +12,15 @@
     <script src="https://cdn.firebase.com/js/client/2.0.2/firebase.js"></script>
 
     <!-- Firechat -->
-    <link rel="stylesheet" href="https://cdn.firebase.com/libs/firechat/2.0.1/firechat.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdn.firebase.com/libs/firechat/2.0.1/firechat.min.css" /> -->
+    <link rel="stylesheet" href="stylesheet.css" />
     <script src="https://cdn.firebase.com/libs/firechat/2.0.1/firechat.min.js"></script>
 
     <!-- Custom CSS -->
     <style>
       #firechat-wrapper {
         height: 475px;
-        max-width: 325px;
+        max-width: 400px;
         padding: 10px;
         border: 1px solid #ccc;
         background-color: #fff;
@@ -31,6 +34,13 @@
         box-shadow: 0 5px 25px #666;
       }
     </style>
+    <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":null,"theme":"light-bottom"};
+</script>
+
+<script type="text/javascript" src="cookie.js"></script>
+<!-- End Cookie Consent plugin -->
   </head>
 
   <!--
@@ -47,7 +57,7 @@
       4. Update the room id for auto-entry with a public room you have created
    -->
   <body>
-    <div id="firechat-wrapper"></div>
+    <!-- <div id="firechat-wrapper"></div>
     <script type="text/javascript">
       var chatRef = new Firebase("https://hackathon-chat1.firebaseio.com");
       var chat = new FirechatUI(chatRef, document.getElementById("firechat-wrapper"));
@@ -62,6 +72,8 @@
           });
         }
       });
-    </script>
+    </script> -->
+
+
   </body>
 </html>
